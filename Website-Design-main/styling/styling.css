@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+body {
+    background: url("../image/Background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+header h1 {
+    font-size: 40px;
+    color: #ff6f61;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Navbar */
+
+nav {
+    background-color: #ffb347;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    margin: 10px 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    border-radius: 20px;
+}
+
+.navbar a:hover {
+    background-color: rgb(41, 200, 228);
+}
+
+/* Sections */
+
+.section {
+    padding: 60px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff6f61;
+}
+
+.section h3 {
+    margin-top: 20px;
+    color: #6a5acd;
+}
+
+.section p, 
+.section ul {
+    max-width: 800px;
+    margin: 10px auto;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.section ul {
+    list-style: none;
+}
+
+.section ul li {
+    margin: 8px 0;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffb347;
+    color: white;
+    font-weight: bold;
+}
+
+/* HOME SECTION */
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.home-text {
+    flex: 1;
+    min-width: 280px;
+    text-size-adjust: 17px;
+}
+
+.home-image {
+    flex: 1;
+    text-align: center;
+}
+
+.home-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.feature-box {
+    background-color: #fff3cd;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #e0713e;
+}
+
+.home-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.home-gallery img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.home-highlight {
+    margin-top: 40px;
+    text-align: center;
+    background-color: #e0f7fa;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+/* PROGRAMS */
+
+.program-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 10px auto 40px auto;
+    font-size: 17px;
+}
+
+.program-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.program-card {
+    background-color: #fff8e1;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+.program-card:hover{
+    transform: translateY(-5px);
+  box-shadow: 0 0 20px #e0713e;
+}
+.program-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.program-card h3 {
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+.program-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.program-card ul li {
+    margin: 6px 0;
+}
+
+.program-highlight {
+    margin-top: 50px;
+    background-color: #fce4ec;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* ACTIVITIES (Clean Modern Version) */
+
+.activities {
+    background-color: #f4f7fa;
+}
+
+.activities-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 10px auto 40px auto;
+    color: #666;
+    font-size: 16px;
+}
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.text-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.text-card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.text-card p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.image-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    filter: brightness(95%);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin: 8px 0;
+    }
+
+    .section {
+        margin: 10px;
+        padding: 40px 15px;
+    }
+
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .program-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Activities Highlight Strip */
+
+.activities-highlight {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.activities-highlight div {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+}
+
+.activities-highlight h4 {
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 16px;
+}
+
+.activities-highlight p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Bottom Section */
+
+.activities-bottom {
+    margin-top: 60px;
+    text-align: center;
+    background-color: #eef3f8;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.activities-bottom h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+/* Contact Section */
+
+.contact {
+    background-color: #f8fafc;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact-info,
+.contact-creators {
+    flex: 1;
+    min-width: 280px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.contact-info h3,
+.contact-creators h3 {
+    margin-top: 15px;
+    color: #333;
+}
+
+.contact-info p {
+    margin: 8px 0;
+    color: #555;
+}
+
+.creator-list {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.creator {
+    text-decoration: none;
+    background: #2ca400;
+    padding: 12px;
+    border-radius: 8px;
+    color: #0a58ca;
+    font-weight: 500;
+}
+
+.creator:hover {
+    background: #d0e2ff;
+}
+.insta {
+  color: rgb(206, 0, 144);
+}
+
+.facebook {
+  color: rgb(81, 81, 243);
+}
+
+/* Admission Section */
+
+.admission {
+    background: linear-gradient(to right, #ffe5ec, #e0f7fa);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.admission-text {
+    max-width: 700px;
+    margin: 15px auto 40px auto;
+    color: #444;
+    font-size: 17px;
+}
+
+.admission-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.admission-info ul {
+    list-style: none;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+.admission-info ul li {
+    margin: 10px 0;
+}
+
+/* Apply Button */
+
+.apply-btn {
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    padding: 20px 50px;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 2px solid black;
+    position: relative;
+}
+/* Home Section "Skip to Admission" Inline Text */
+
+.home-skip {
+    font-size: 18px;           /* slightly bigger than normal paragraph */
+    color: #ff6f61;
+    margin-bottom: 15px;
+}
+
+.home-skip .skip-link {
+    text-decoration: none;
+    color: #0a58ca;
+    font-weight: bold;
+    border-bottom: 1px solid #0a58ca;
+}
+
+.home-skip .skip-link:hover {
+    color: #ff6f61;
+    border-color: #ff6f61;
+}
+/* Smooth Scroll for the whole page */
+html {
+    scroll-behavior: smooth;
+}
